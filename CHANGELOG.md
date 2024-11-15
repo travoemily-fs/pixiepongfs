@@ -13,10 +13,13 @@
 - **11/14** - basic universal, body, & main container styling added to style.css
 - **11/14** - hosted fonts from adobe added to project
 - **11/14** - began set up of game interface by defining game container and drawing the first graphic inside index.js
+- **11/14** - added typescript to the project compile-time error checking
+- **11/14** - completed basic ping pong animation for app 
 
 **CHANGED:**
 
 - **11/14** - used pixi.js cdn link to import into project
+- **11/14** - index.js to index.ts for typescript 
 
 **FIXED:**
 
