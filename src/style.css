@@ -9,36 +9,123 @@
 body {
   font-family: p22-folk-art-square, sans-serif;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
   margin: 0;
+  padding: 0;
   min-height: 100vh;
-  background-color: aqua;
+  background-image: url("../src/assets/bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-/* header styles */
-header {
-  padding: 50px 0 50px 0;
-}
-
-h2 {
-  font-family: p22-folk-art-stitch, sans-serif;
-}
-
-/* main container styles */
+/* main styles */
 main {
+  flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
+/* header styles */
+header {
+  padding: 100px 0 30px 0;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}
+
+h2::before {
+  content: ". ݁₊ ⊹ . ݁˖ . ݁. ݁₊ ⊹ . ݁˖ . ݁. ݁₊ ⊹ . ݁˖ . ݁. ݁₊ ⊹ . ݁˖ . ݁. ݁₊ ⊹ . ݁˖ . ݁";
+  text-transform: lowercase;
+  font-family: Arial, Helvetica, sans-serif;
+  display: block;
+  font-size: 1rem;
+  color: black;
+  text-shadow: none;
+}
+
+h2 {
+  font-family: p22-folk-art-stitch, sans-serif;
+  color: #ffd5e0;
+  text-shadow: 0.5px 0.5px 0 black, 0 0 2px #ffd5e0;
+}
+
+h2::after {
+  content: ". ݁₊ ⊹ . ݁˖ . ݁. ݁₊ ⊹ . ݁˖ . ݁. ݁₊ ⊹ . ݁˖ . ݁. ݁₊ ⊹ . ݁˖ . ݁. ݁₊ ⊹ . ݁˖ . ݁";
+  text-transform: lowercase;
+  font-family: Arial, Helvetica, sans-serif;
+  display: block;
+  font-size: 1rem;
+  color: black;
+  text-shadow: none;
+}
+
+/* buton container styles */
+#btnHolder {
+  height: 100px;
+  padding-bottom: 20px;
+}
+
+#playAgain {
+  margin: 0;
+  max-height: 50px;
+  padding: 10px;
+  font-family: p22-folk-art-block, sans-serif;
+  display: none;
+  background-color: #864ebfc7;
+  border-radius: 8px;
+  border: 1px ridge #7342a3;
+  box-shadow: 0 0 5px #874ebf;
+}
+
+#playAgain:hover,
+#playAgain:active {
+  background-color: #6741f2c4;
+  border: 1px ridge #5837ce;
+  box-shadow: 0 0 10px #6841f2;
+}
+
+/* game container styles */
 #mcontainer {
   margin: 0;
   width: 800px;
   height: 500px;
 }
 
+canvas {
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.324);
+}
+
 #mcontainer canvas {
-  border: 1px solid black;
+  border-left: 1px ridge white;
+  border-right: 1px ridge white;
+  border-top: 1px ridge white;
+  border-bottom: 1px ridge white;
+}
+
+/* footer styles */
+footer {
+  font-family: p22-folk-art-block, sans-serif;
+  padding-top: 50px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}
+
+footer p {
+  color: black;
+  background-color: #f279bcbc;
+  width: auto;
+  height: 20px;
+  padding: 10px 15px 30px 15px;
+  border: 1px ridge #d94e73;
+  box-shadow: 0 0 10px #d94e73;
+  border-radius: 8px;
+  margin-top: 0;
 }
